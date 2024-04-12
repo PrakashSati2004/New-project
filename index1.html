@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #grandparent{
+            height: auto;
+            width: auto;
+        }
+        #navDiv{
+            margin: auto;
+            width: 100%;
+            height: auto;
+        }
+        #secDiv{
+            width: 80%;
+            height: auto;
+            margin:auto;
+        }
+        #divDiv{
+            width: 100%;
+            height: auto;
+            margin: auto;
+            display: flex;
+            
+        }
+        #pherDiv{
+            display: flex;
+            justify-content: center;    
+            width: 30%;
+            padding-right: 100px;
+
+        }
+        #pherDiv>div {
+            width: 100%;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        #pher2{
+            display: flex;
+            flex-direction: column;
+        }
+        #pr2ch>img,p{
+            height: 50%;
+            margin-top: 10px;
+        }
+        #pr2ch{
+            display: flex;
+            padding-right: 55px;
+        }
+        #pher1>button{
+            border: none;
+            font-weight: 280px;
+            background-color: white;
+            padding-left: 15px;
+        }
+        #pherDiv>#phrPicdiv{
+            width: 100%;
+            text-align: center;        
+        }
+        #pherBtn>button{
+            border: none;
+            background-color: white;
+            padding: 25px;
+        }
+        #nav2Btns{
+            padding: 5px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+        #nav2Btns>button{
+            padding: 5px;
+            border: none;
+            background-color: white;
+        }
+        #sec1{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 3px;
+        }
+        #sec1Div2>p{
+            display: inline;
+        }
+        #sec1Div2>button{
+            border: none;
+            background-color: white;
+            color: teal;
+        }
+        #sec2Div1{
+            width: 70%;
+            display: flex;
+            justify-content: baseline;
+            border-radius: 15px;
+            padding: 5px;
+            border: 1px solid rgba(172, 164, 164, 0.527);
+            margin-bottom: 30px;
+        }
+        #sec2Div1>input{
+            width: 98%;
+            border: none;
+            background-color: white;
+            padding: 5px;
+        }
+        #sec2Div1>button{
+            border: none;
+            background-color: teal;
+            color: white;
+            border-radius: 15px;
+            padding: 5px;
+        }
+        #sec3{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 60px;
+        }
+        .sec3Divs>img{
+            width: 88px;
+            height: 99px;
+            border-bottom: 1px solid lightslategrey;
+        }
+        .sec3Divs>h5+h5{
+            color: red;
+            padding-top: 8px;
+        }
+        #sec1Div1{
+            padding-top: 3%;
+            padding-bottom: 2%;
+        }
+        #sec1Div2{
+            padding-top: 4%;
+            padding-bottom: 1%;
+        }
+        #divDiv>div>img{
+            width: 480px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        <div id="navDiv">
+            <nav >
+                <div id="pherDiv">
+                    <div id="phrPicDiv">
+                        <img id="phrPic" src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0" alt="">
+                    </div>
+                    <div>
+                        <div id="pher2">
+                            <div id="pr2ch">
+                                <img src="https://assets.pharmeasy.in/apothecary/images/ic_express%20delivery.svg?dim=16x0" alt="">
+                                <p>Express delivery to.</p>
+                            </div>
+                        </div>
+                        <div id="pher1">
+                            <button><b>400001 Mumbai ⬇</b></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="pherBtn">
+                    <button>📲 Download App</button>
+                    <button>🤵 Hello, Log in</button>
+                    <button>🫴 Offer</button>
+                    <button>🛒 Cart</button>
+                </div>
+            </nav>
+            <nav>
+                <div style="border: 1px solid rgba(176, 171, 171, 0.448); width: 100%;">
+                    <div  id="nav2Btns">
+                        <button>Medicine</button>
+                        <button>Lab Tests</button>
+                        <button>Healthcare</button>
+                        <button>Health Blogs</button>
+                        <button>PLUS</button>
+                        <button>Offers</button>
+                        <button>Value Store</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="secDiv">
+            <section id="sec1">
+                <div id="sec1Div1">
+                    <h1>What Are You Looking For?</h1>
+                </div>
+                <div id="sec1Div2">
+                    <p>🗒️ Order with prescription.</p>
+                    <button>UPLOAD NOW ></button>
+                </div>
+            </section>
+            <section>
+                <div id="sec2Div1"> 
+                    <input type="text" placeholder="🔍 Search for" > 
+                    <button>Search</button>
+                </div>
+            </section>
+            <section id="sec3">
+                <div class="sec3Divs">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0" alt="">
+                    <h5>Medicine</h5>
+                    <h5>UPTO 27% OFF</h5>
+                </div>
+                <div class="sec3Divs">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0" alt="">
+                    <h5>Lab Tests</h5>
+                    <h5>UPTO 70% OFF</h5>
+                </div>
+                <div class="sec3Divs">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0" alt="">
+                    <h5>Healthcare</h5>
+                    <h5>UPTO 60% OFF</h5>
+                </div>
+                <div class="sec3Divs">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0" alt="">
+                    <h5>Health Blogs</h5>
+                    <p></p>
+                </div>
+                <div class="sec3Divs">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/plus_ff.webp?dim=256x0" alt="">
+                    <h5>PLUS</h5>
+                    <h5>SAVE 5% EXTRA</h5>
+                </div>
+                <div class="sec3Divs">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/offers_ff.webp?dim=256x0" alt="">
+                    <h5>Offers</h5>
+                </div>
+                <div class="sec3Divs">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/value_store.png?dim=256x0" alt="">
+                    <h5>Value Store</h5>
+                    <h5>UPTO 50% OFF</h5>
+                </div>
+
+            </section>
+        </div>
+        <div id="divDiv">
+            <div>
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/3820fdf2bc7-25OFFER.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/df4321df50a-211.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/4d4f7e94057-NewSlipperLaunchHP.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
